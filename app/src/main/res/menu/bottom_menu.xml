@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/RecommendFragment"
+        android:icon="@drawable/logo_recommend"
+        android:title="@string/recommend" />
+    <item
+        android:id="@+id/WorldFragment"
+        android:icon="@drawable/logo_world"
+        android:title="@string/world" />
+    <item
+        android:id="@+id/MyFragment"
+        android:icon="@drawable/logo_my"
+        android:title="@string/my" />
+</menu>
