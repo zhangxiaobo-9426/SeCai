@@ -6,9 +6,11 @@
     tools:context=".ui.world.video.VideoFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/video_2_ViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>
