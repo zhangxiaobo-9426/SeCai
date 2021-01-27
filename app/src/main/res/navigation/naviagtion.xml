@@ -9,7 +9,11 @@
         android:id="@+id/WorldFragment"
         android:name="com.example.secai.ui.world.WorldFragment"
         android:label="fragment_world"
-        tools:layout="@layout/fragment_world" />
+        tools:layout="@layout/fragment_world" >
+        <action
+            android:id="@+id/action_WorldFragment_to_pagerArticleFragment"
+            app:destination="@id/pagerArticleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/RecommendFragment"
         android:name="com.example.secai.ui.recommend.RecommendFragment"
@@ -20,4 +24,23 @@
         android:name="com.example.secai.ui.my.MyFragment"
         android:label="fragment_my"
         tools:layout="@layout/fragment_my" />
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.secai.ui.world.article.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" >
+        <action
+            android:id="@+id/action_articleFragment_to_pagerArticleFragment"
+            app:destination="@id/pagerArticleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagerArticleFragment"
+        android:name="com.example.secai.ui.world.article.pagerarticle.PagerArticleFragment"
+        android:label="fragment_pager_article"
+        tools:layout="@layout/fragment_pager_article" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.secai.ui.world.video.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
 </navigation>

@@ -6,4 +6,9 @@
     <string name="recommend">推荐</string>
     <string name="world">世界</string>
     <string name="my">我的</string>
+
+    <string name="seting">正在加载</string>
+    <string name="photo_tag" translatable="false">%d / %d</string>
+    <string name="StorageFailure">存储失败</string>
+    <string name="StorageSuccessful">存储成功</string>
 </resources>

@@ -80,7 +80,7 @@
     <!-- 文字按钮（正常） -->
     <color name="btn_font_n">#508cee</color>
     <!-- 激活/按下状态 -->
-    <color name="btn_font_a">#1b3b98</color>
+    <color name="btn_font_a">#1B3B98</color>
     <!-- 禁用状态 -->
     <color name="btn_font_d">#9fc0f5</color>
 

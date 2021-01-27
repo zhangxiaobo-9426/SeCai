@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--二十五、拉到最后，显示加载更多-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:indeterminateTint="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textViewfooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seting"
+        tools:text="@string/seting" />
+
+</LinearLayout>
