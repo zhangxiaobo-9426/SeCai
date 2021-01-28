@@ -126,30 +126,35 @@ class RecommendViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             textViewrecommendLikeCounts.text = recommendItme.recommendLikeCounts.toString()
 
         }
-        Glide.with(itemView)
-            .load(recommendItme.recommendImages[0])
-            .placeholder(R.drawable.ic_photo_gallery_24dp)
-            .listener(object : RequestListener<Drawable> {
-                override fun onLoadFailed(
-                    e: GlideException?,
-                    model: Any?,
-                    target: Target<Drawable>?,
-                    isFirstResource: Boolean
-                ): Boolean {
-                    return false
-                }
+        try {
+            Glide.with(itemView)
+                .load(recommendItme.recommendImages[0])
+                .placeholder(R.drawable.ic_photo_gallery_24dp)
+                .listener(object : RequestListener<Drawable> {
+                    override fun onLoadFailed(
+                        e: GlideException?,
+                        model: Any?,
+                        target: Target<Drawable>?,
+                        isFirstResource: Boolean
+                    ): Boolean {
+                        return false
+                    }
 
-                override fun onResourceReady(
-                    resource: Drawable?,
-                    model: Any?,
-                    target: Target<Drawable>?,
-                    dataSource: DataSource?,
-                    isFirstResource: Boolean
-                ): Boolean {
-                    return false.also { itemView.shimmerLayoutRecommend?.stopShimmerAnimation() }
-                }
+                    override fun onResourceReady(
+                        resource: Drawable?,
+                        model: Any?,
+                        target: Target<Drawable>?,
+                        dataSource: DataSource?,
+                        isFirstResource: Boolean
+                    ): Boolean {
+                        return false.also { itemView.shimmerLayoutRecommend?.stopShimmerAnimation() }
+                    }
 
-            }).into(itemView.imageViewRecommendCell)
+                }).into(itemView.imageViewRecommendCell)
+        }        catch (exception:Exception){
+            itemView.imageViewRecommendCell.visibility = View.GONE
+        }
+
     }
 }
 
