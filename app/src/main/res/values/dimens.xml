@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="article_layout_margin">4dp</dimen>
+    <dimen name="my_secai_and_jifen_size">18sp</dimen>
+    <dimen name="my_qianming_size">18sp</dimen>
 </resources>

@@ -11,4 +11,15 @@
     <string name="photo_tag" translatable="false">%d / %d</string>
     <string name="StorageFailure">存储失败</string>
     <string name="StorageSuccessful">存储成功</string>
+    <string name="my_secai">色彩</string>
+    <string name="my_jifen">积分</string>
+    <string name="my_qianming">暂无个人简介，填写个人简介更容易获取别人关注哦！</string>
+    <string name="my_login">点击登录</string>
+    <string name="my_fabulous">赞</string>
+    <string name="my_follow">关注</string>
+    <string name="my_fans">粉丝</string>
+    <string name="mu_jiben">基本信息</string>
+    <string name="my_jichu">基础信息</string>
+    <string name="my_shujizichan">数据资产</string>
+    <string name="my_my">我的相关</string>
 </resources>
