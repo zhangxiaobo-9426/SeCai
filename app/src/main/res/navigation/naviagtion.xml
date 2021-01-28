@@ -18,7 +18,11 @@
         android:id="@+id/RecommendFragment"
         android:name="com.example.secai.ui.recommend.RecommendFragment"
         android:label="fragment_recommend"
-        tools:layout="@layout/fragment_recommend" />
+        tools:layout="@layout/fragment_recommend" >
+        <action
+            android:id="@+id/action_RecommendFragment_to_pagerRecommendFragment"
+            app:destination="@id/pagerRecommendFragment" />
+    </fragment>
     <fragment
         android:id="@+id/MyFragment"
         android:name="com.example.secai.ui.my.MyFragment"
@@ -43,4 +47,9 @@
         android:name="com.example.secai.ui.world.video.VideoFragment"
         android:label="fragment_video"
         tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/pagerRecommendFragment"
+        android:name="com.example.secai.ui.recommend.pagerrecommend.PagerRecommendFragment"
+        android:label="fragment_pager_recommend"
+        tools:layout="@layout/fragment_pager_recommend" />
 </navigation>
